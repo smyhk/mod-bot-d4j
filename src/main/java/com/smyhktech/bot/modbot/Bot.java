@@ -7,6 +7,7 @@ package com.smyhktech.bot.modbot;
 
 import com.smyhktech.bot.modbot.commands.Command;
 import com.smyhktech.bot.modbot.commands.CommandManager;
+import com.smyhktech.bot.modbot.events.BotEventListener;
 import java.util.List;
 import sx.blah.discord.api.ClientBuilder;
 import sx.blah.discord.api.IDiscordClient;
@@ -25,6 +26,7 @@ public class Bot {
     public Bot(String token) {
         bot = createClient(token);
         commands = new CommandManager("!");
+        bot.getDispatcher().registerListener(new BotEventListener());
         bot.getDispatcher().registerListener(commands);
     }
     

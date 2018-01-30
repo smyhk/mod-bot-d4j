@@ -21,7 +21,6 @@ public class BotMain {
         bot = new Bot("NDA3OTg1NTMzNDgzMjIxMDEz.DVJdtA.QdoYGghT9uCiwK0M266a_CzOfoA");
         
         // bot commands
-        // bot commands
         bot.addCommand(new PingCommand());
     }
 }
