@@ -18,7 +18,7 @@ public class BotMain {
     public static void main(String[] args) {
         
         // This will be changed to load from file or enviroment varible
-        bot = new Bot("NDA3OTg1NTMzNDgzMjIxMDEz.DVJdtA.QdoYGghT9uCiwK0M266a_CzOfoA");
+        bot = new Bot("");
         
         // bot commands
         bot.addCommand(new PingCommand());
