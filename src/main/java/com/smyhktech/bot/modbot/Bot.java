@@ -5,10 +5,11 @@
  */
 package com.smyhktech.bot.modbot;
 
+import java.util.List;
 import com.smyhktech.bot.modbot.commands.Command;
 import com.smyhktech.bot.modbot.commands.CommandManager;
 import com.smyhktech.bot.modbot.events.BotEventListener;
-import java.util.List;
+
 import sx.blah.discord.api.ClientBuilder;
 import sx.blah.discord.api.IDiscordClient;
 import sx.blah.discord.handle.obj.IGuild;

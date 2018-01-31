@@ -18,7 +18,7 @@ public class BotMain {
     public static void main(String[] args) {
         
         // This will be changed to load from file or enviroment varible
-        bot = new Bot("");
+        bot = new Bot(token);
         
         // bot commands
         bot.addCommand(new PingCommand());
