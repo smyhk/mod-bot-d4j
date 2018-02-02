@@ -36,7 +36,7 @@ public class BotEventListener {
         LocalDateTime joinTime = event.getJoinTime();
         String formattedDate = formatter.format(joinTime);
         
-        channel = event.getGuild().getChannelByID(408026330928644097L);
+        channel = event.getGuild().getChannelByID(257709519415672832L);
         String message = user.mention() + " joined at: " + formattedDate;
         
         channel.sendMessage(message);
@@ -49,7 +49,7 @@ public class BotEventListener {
         LocalDateTime leaveTime = LocalDateTime.now();
         String formattedDate = formatter.format(leaveTime);
         
-        channel = event.getGuild().getChannelByID(408026330928644097L);
+        channel = event.getGuild().getChannelByID(257709519415672832L);
         String message = user.mention() + " left at: " + formattedDate;
         
         channel.sendMessage(message);
