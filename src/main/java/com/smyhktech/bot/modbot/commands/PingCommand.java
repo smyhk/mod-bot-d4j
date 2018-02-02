@@ -28,7 +28,7 @@ public class PingCommand implements Command {
 
     @Override
     public void runCommand(IUser user, IChannel channel, IGuild guild, String label, List<String> args) {
-        channel.sendMessage("Pong!");
-        
+        String pongMessage = ":ping_pong: pong!";
+        user.getOrCreatePMChannel().sendMessage(pongMessage);
     }
 }
